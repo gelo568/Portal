@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal | Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Student Portal home">
+          <span class="brand-mark">S</span>
+          <span>Student Portal</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-chip">
+          <img class="avatar avatar-image" src="./Photo/image.jpg" alt="Student profile photo" />
+          <div class="user-meta">
+            <strong>ANGELO BELLOSILLO</strong>
+            <span>Student</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <span class="badge">Account settings</span>
+            <h1>Student Profile</h1>
+            <p>Manage your personal details and academic information.</p>
+          </div>
+          <a href="index.html" class="link-btn">Home</a>
+        </div>
+
+        <section class="profile-grid">
+          <aside class="card profile-card">
+            <div class="profile-avatar">
+              <img src="./Photo/image.jpg" alt="Profile photo" />
+            </div>
+            <h3>ANGELO BELLOSILLO</h3>
+            <p>Datamex College of Saint Adeline, 2nd Year Associate in Computer Technology</p>
+
+            <ul class="meta-list">
+              <li><span>School</span><strong>Datamex College of Saint Adeline</strong></li>
+              <li><span>Program</span><strong>Associate in Computer Technology</strong></li>
+              <li><span>Major Subjects</span><strong>4 subjects</strong></li>
+              <li><span>Year</span><strong>2nd Year</strong></li>
+            </ul>
+          </aside>
+
+          <section class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Personal details</h2>
+            </div>
+
+            <form id="profile-form">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="first-name">First name</label>
+                  <input id="first-name" type="text" value="ANGELO" />
+                </div>
+
+                <div class="field">
+                  <label for="last-name">Last name</label>
+                  <input id="last-name" type="text" value="BELLOSILLO" />
+                </div>
+
+                <div class="field full-width">
+                  <label for="email">School</label>
+                  <input id="email" type="text" value="Datamex College of Saint Adeline" />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Course</label>
+                  <input id="phone" type="text" value="Associate in Computer Technology" />
+                </div>
+
+                <div class="field">
+                  <label for="year">Academic year</label>
+                  <select id="year">
+                    <option>1st Year</option>
+                    <option selected>2nd Year</option>
+                    <option>3rd Year</option>
+                  </select>
+                </div>
+
+                <div class="field full-width">
+                  <label for="address">Major subjects</label>
+                  <input id="address" type="text" value="Information Management 1, Programming 2, Data Structure & Algorithm, Integrative Programming Technology" />
+                </div>
+
+                <div class="field">
+                  <label for="major">Teacher</label>
+                  <input id="major" type="text" value="Sir Rex John Barinas" />
+                </div>
+
+                <div class="field">
+                  <label for="minor">Minor subjects</label>
+                  <input id="minor" type="text" value="Science, Technology & Society; P.E. 3; Rizal, Life Works & Writing" />
+                </div>
+              </div>
+
+              <button class="primary-btn" type="submit">Save changes</button>
+            </form>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 Student Portal</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

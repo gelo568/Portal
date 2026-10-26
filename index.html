@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal | Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Student Portal home">
+          <span class="brand-mark">S</span>
+          <span>Student Portal</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-chip">
+          <img class="avatar avatar-image" src="./Photo/image.jpg" alt="Student profile photo" />
+          <div class="user-meta">
+            <strong>ANGELO BELLOSILLO</strong>
+            <span>Student</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <span class="badge">Welcome back</span>
+            <h1>Student Dashboard</h1>
+            <p id="current-date">Loading date...</p>
+          </div>
+          <a href="results.html" class="link-btn">View results →</a>
+        </div>
+
+        <section class="grid grid-4">
+          <article class="card stat-card">
+            <div class="stat-label">
+              <span>Attendance</span>
+              <span class="stat-icon">📚</span>
+            </div>
+            <div class="stat-value">92%</div>
+            <div class="stat-trend">+4% this month</div>
+          </article>
+
+          <article class="card stat-card">
+            <div class="stat-label">
+              <span>Credits</span>
+              <span class="stat-icon">🎓</span>
+            </div>
+            <div class="stat-value">118</div>
+            <div class="stat-trend">12 left to complete</div>
+          </article>
+
+          <article class="card stat-card">
+            <div class="stat-label">
+              <span>GPA</span>
+              <span class="stat-icon">📈</span>
+            </div>
+            <div class="stat-value">3.8</div>
+            <div class="stat-trend">Excellent standing</div>
+          </article>
+
+          <article class="card stat-card">
+            <div class="stat-label">
+              <span>Next Exam</span>
+              <span class="stat-icon">🗓️</span>
+            </div>
+            <div class="stat-value">4d</div>
+            <div class="stat-trend">Data Structures</div>
+          </article>
+        </section>
+
+        <div class="overview-layout">
+          <section class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Announcements</h2>
+              <a href="#" class="link-btn">All updates</a>
+            </div>
+
+            <div class="list">
+              <article class="notice-item">
+                <div class="notice-dot primary">📢</div>
+                <div class="notice-content">
+                  <h4>Campus scholarships application opens</h4>
+                  <p>Submit your documents before 30 October to be considered for the autumn grant round.</p>
+                </div>
+              </article>
+
+              <article class="notice-item">
+                <div class="notice-dot warning">⚠️</div>
+                <div class="notice-content">
+                  <h4>Library access hours changed</h4>
+                  <p>The main library will open from 8:00 AM to 9:00 PM during midterm week.</p>
+                </div>
+              </article>
+
+              <article class="notice-item">
+                <div class="notice-dot success">✅</div>
+                <div class="notice-content">
+                  <h4>Workshop registration confirmed</h4>
+                  <p>Your place in the UX Design workshop has been reserved for Thursday morning.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <aside class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Quick actions</h2>
+            </div>
+            <div class="quick-actions">
+              <a href="courses.html" class="action-btn"><span class="icon">📘</span> My Courses</a>
+              <a href="timetable.html" class="action-btn"><span class="icon">🕒</span> Timetable</a>
+              <a href="results.html" class="action-btn"><span class="icon">📊</span> Results</a>
+              <a href="profile.html" class="action-btn"><span class="icon">👤</span> Profile</a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="overview-layout" style="margin-top: 22px;">
+          <section class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Upcoming tasks</h2>
+              <a href="#" class="link-btn">See all</a>
+            </div>
+
+            <div class="list">
+              <article class="task-item">
+                <div class="task-detail">
+                  <div class="notice-dot primary">📝</div>
+                  <div>
+                    <h4>Research proposal draft</h4>
+                    <p>Due on 28 Oct • 11:59 PM</p>
+                  </div>
+                </div>
+                <span class="status-pill pending">Pending</span>
+              </article>
+
+              <article class="task-item">
+                <div class="task-detail">
+                  <div class="notice-dot warning">💻</div>
+                  <div>
+                    <h4>Database lab submission</h4>
+                    <p>Due on 02 Nov • 08:00 AM</p>
+                  </div>
+                </div>
+                <span class="status-pill pending">Pending</span>
+              </article>
+
+              <article class="task-item">
+                <div class="task-detail">
+                  <div class="notice-dot success">✅</div>
+                  <div>
+                    <h4>Reading reflection</h4>
+                    <p>Submitted on 24 Oct • 05:20 PM</p>
+                  </div>
+                </div>
+                <span class="status-pill completed">Done</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="panel-header">
+              <h2 class="section-title">This week</h2>
+              <a href="timetable.html" class="link-btn">Open calendar</a>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Machine Learning</strong></td>
+                    <td>Mon</td>
+                    <td>09:00</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Data Structures</strong></td>
+                    <td>Tue</td>
+                    <td>11:00</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Communication</strong></td>
+                    <td>Wed</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td><strong>UX Lab</strong></td>
+                    <td>Thu</td>
+                    <td>15:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 Student Portal</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

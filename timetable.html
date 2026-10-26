@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal | Timetable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Student Portal home">
+          <span class="brand-mark">S</span>
+          <span>Student Portal</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="timetable.html" class="active">Timetable</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-chip">
+          <img class="avatar avatar-image" src="./Photo/image.jpg" alt="Student profile photo" />
+          <div class="user-meta">
+            <strong>ANGELO BELLOSILLO</strong>
+            <span>Student</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <span class="badge">Week planner</span>
+            <h1>Class Timetable</h1>
+            <p>Stay organized and keep up with your weekly schedule.</p>
+          </div>
+          <a href="index.html" class="link-btn">Return home</a>
+        </div>
+
+        <section class="schedule-grid">
+          <article class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Thursday</h2>
+            </div>
+            <div class="list">
+              <div class="time-block">
+                <div>
+                  <div class="time-label">07:00 - 10:00</div>
+                  <p>Major subject</p>
+                </div>
+                <span class="room-tag">Major</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">10:00 - 13:30</div>
+                  <p>P.E. 3</p>
+                </div>
+                <span class="room-tag">Sir Jerome Deguzman</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">13:30 - 16:30</div>
+                  <p>Free time</p>
+                </div>
+                <span class="room-tag">Break</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">16:30 - 19:00</div>
+                  <p>Rizal, Life Works &amp; Writing</p>
+                </div>
+                <span class="room-tag">Rizal</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Saturday</h2>
+            </div>
+            <div class="list">
+              <div class="time-block">
+                <div>
+                  <div class="time-label">07:00 - 16:30</div>
+                  <p>Major subjects</p>
+                </div>
+                <span class="room-tag">Sir Rex John Barinas</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">16:30 - 19:30</div>
+                  <p>Science, Technology &amp; Society</p>
+                </div>
+                <span class="room-tag">Sir Justin Bañez</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Major subjects</h2>
+            </div>
+            <div class="list">
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Instructor</div>
+                  <p>Information Management 1</p>
+                </div>
+                <span class="room-tag">Sir Rex John Barinas</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Instructor</div>
+                  <p>Programming 2</p>
+                </div>
+                <span class="room-tag">Sir Rex John Barinas</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Instructor</div>
+                  <p>Data Structure &amp; Algorithm</p>
+                </div>
+                <span class="room-tag">Sir Rex John Barinas</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Instructor</div>
+                  <p>Integrative Programming Technology</p>
+                </div>
+                <span class="room-tag">Sir Rex John Barinas</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="panel-header">
+              <h2 class="section-title">Minor subjects</h2>
+            </div>
+            <div class="list">
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Teacher</div>
+                  <p>Science, Technology &amp; Society</p>
+                </div>
+                <span class="room-tag">Sir Justin Bañez</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Teacher</div>
+                  <p>P.E. 3</p>
+                </div>
+                <span class="room-tag">Sir Jerome Deguzman</span>
+              </div>
+              <div class="time-block">
+                <div>
+                  <div class="time-label">Teacher</div>
+                  <p>Rizal, Life Works &amp; Writing</p>
+                </div>
+                <span class="room-tag">Maam Princess estenzo</span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 Student Portal</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal | Results</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Student Portal home">
+          <span class="brand-mark">S</span>
+          <span>Student Portal</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="results.html" class="active">Results</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-chip">
+          <img class="avatar avatar-image" src="./Photo/image.jpg" alt="Student profile photo" />
+          <div class="user-meta">
+            <strong>ANGELO BELLOSILLO</strong>
+            <span>Student</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <span class="badge">Academic report</span>
+            <h1>Results</h1>
+            <p>Track your latest grades and performance summary.</p>
+          </div>
+          <a href="index.html" class="link-btn">Dashboard</a>
+        </div>
+
+        <section class="marks-summary">
+          <article class="score-card">
+            <div class="tiny">Overall GPA</div>
+            <strong>3.8</strong>
+          </article>
+          <article class="score-card">
+            <div class="tiny">Credits Passed</div>
+            <strong>102</strong>
+          </article>
+          <article class="score-card">
+            <div class="tiny">Semester Rank</div>
+            <strong>#12</strong>
+          </article>
+        </section>
+
+        <section class="card">
+          <div class="panel-header">
+            <h2 class="section-title">Grade overview</h2>
+            <a href="#" class="link-btn">Download transcript</a>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Assessment</th>
+                  <th>Score</th>
+                  <th>Grade</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Machine Learning</td>
+                  <td>Midterm</td>
+                  <td>92%</td>
+                  <td>A</td>
+                  <td><span class="status-pill completed">Pass</span></td>
+                </tr>
+                <tr>
+                  <td>Data Structures</td>
+                  <td>Quiz 2</td>
+                  <td>86%</td>
+                  <td>B+</td>
+                  <td><span class="status-pill completed">Pass</span></td>
+                </tr>
+                <tr>
+                  <td>Professional Communication</td>
+                  <td>Presentation</td>
+                  <td>94%</td>
+                  <td>A</td>
+                  <td><span class="status-pill completed">Pass</span></td>
+                </tr>
+                <tr>
+                  <td>UX Design Lab</td>
+                  <td>Prototype Review</td>
+                  <td>89%</td>
+                  <td>B+</td>
+                  <td><span class="status-pill completed">Pass</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 Student Portal</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
